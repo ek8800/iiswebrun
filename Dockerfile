@@ -8,4 +8,4 @@ RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
 
 EXPOSE 8080
 ENTRYPOINT ["java", "-jar",  "webAPI-0.0.1-SNAPSHOT.jar"] 
-CMD ["php_10_pgsqlflag", "logRemoteDBflag"] 
+CMD ["iisurl=https://app-5412a6d3-741d-4c1a-87ae-6761a8efe407.cleverapps.io", "php_10_pgsqlflag", "logRemoteDBflag"] 
